@@ -8,7 +8,7 @@ BASE_URL = "https://synthetic-database.onrender.com"
 
 st.title("Synthetic Selection Module Management System")
 
-with st.expander("Module related functions"):
+with st.expander("All users"):
     response = requests.get(f"{BASE_URL}/get_all_users")
     st.json(response.json())
 
